@@ -114,7 +114,7 @@ Create a scalable and replicable reference tapeout program that serves as a nati
 
 ## 🤝 Program Partners
 
-- **Academic Partner**: IIT Gandhinagar (IITGN)
+- **Academic Partner**: IIT Gandhinagar (IITGN) & VSD 
 - **Industry Partner**: Synopsys India
 - **Technology Partner**: SCL (Semiconductor Complex Limited)
 - **Mission Partner**: India Semiconductor Mission
@@ -129,13 +129,8 @@ Create a scalable and replicable reference tapeout program that serves as a nati
 
 ### Program Coordination
 - **Email**: riscv-tapeout@iitgn.ac.in
-- **Phone**: +91-XX-XXXX-XXXX
 - **Address**: IIT Gandhinagar, Palaj, Gandhinagar, Gujarat
 
-### Technical Support
-- **Documentation**: [Program Wiki](https://wiki.riscv-tapeout.in)
-- **Forums**: [Community Support](https://community.riscv-tapeout.in)
-- **Office Hours**: Monday-Friday, 10:00 AM - 6:00 PM IST
 
 ## 📈 Impact & Recognition
 
