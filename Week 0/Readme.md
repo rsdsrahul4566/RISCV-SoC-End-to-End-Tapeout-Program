@@ -1,4 +1,4 @@
-# SFAL VSD Week 0 - EDA Tools Installation - Using WSL
+#  Week 0 - EDA Tools Installation - Using WSL
 
 [![VLSI](https://img.shields.io/badge/VLSI-Design-blue)](https://vlsisystemdesign.com/)
 [![Tools](https://img.shields.io/badge/EDA-Tools-green)](#tools-installed)
