@@ -414,7 +414,6 @@ The installation provides a solid foundation for advanced VLSI design coursework
 ---
 
 **Author:** Rahul Kumar
-**Course:** SFAL VSD  
 **Week:** 0 - Tools Installation  
 **Status:** Complete ✅
 
