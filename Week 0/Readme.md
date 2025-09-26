@@ -113,7 +113,7 @@ sudo apt-get install gtkwave -y
 gtkwave --version
 ```
 
-**Expected Output:** GTKWave version information
+**📸 Implementation Output:** GTKWave version information
 
 <img width="1845" height="721" alt="Screenshot 2025-09-25 173309" src="https://github.com/user-attachments/assets/0e61d784-bbba-4af5-9de9-607deb4b773b" />
 
@@ -221,7 +221,7 @@ sudo docker run hello-world
 docker run hello-world
 ```
 
-**Expected Output:** Docker hello-world message without sudo
+**📸 Implementation Output:** Docker hello-world message without sudo
 
 <img width="1319" height="786" alt="Screenshot 2025-09-25 174217" src="https://github.com/user-attachments/assets/11721dcd-9f06-405d-98c6-2be07a5e8599" />
 
@@ -255,9 +255,12 @@ sudo chown -R $USER:$USER ~/.ciel/
 make test
 ```
 
-**Expected Output:** Successful SPM test design completion with "Basic test passed"
+**📸 Implementation Output:** Successful SPM test design completion with "Basic test passed"
 
-![Screenshot - Replace with your OpenLANE test screenshot]()
+<img width="1919" height="1023" alt="Screenshot 2025-09-26 181802" src="https://github.com/user-attachments/assets/88b7efa3-1244-4daa-af01-14b1fd23cbd1" />
+
+<img width="1703" height="1003" alt="Screenshot 2025-09-26 181745" src="https://github.com/user-attachments/assets/5417e107-d4b2-4413-96d1-159caa88a6fa" />
+
 
 ## Verification Results
 
