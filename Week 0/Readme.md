@@ -262,36 +262,7 @@ make test
 <img width="1703" height="1003" alt="Screenshot 2025-09-26 181745" src="https://github.com/user-attachments/assets/5417e107-d4b2-4413-96d1-159caa88a6fa" />
 
 
-## Verification Results
 
-### Complete Tool Verification Script
-```bash
-#!/bin/bash
-echo "=== EDA Tools Installation Verification ==="
-echo
-
-echo "1. Yosys: $(yosys -V 2>/dev/null | head -1 || echo 'FAILED')"
-echo "2. Iverilog: $(iverilog -V 2>/dev/null | head -1 || echo 'FAILED')"  
-echo "3. GTKWave: $(gtkwave --version 2>/dev/null | head -1 || echo 'FAILED')"
-echo "4. NGSpice: $(ngspice --version 2>/dev/null | head -1 || echo 'FAILED')"
-echo "5. Docker: $(docker --version 2>/dev/null || echo 'FAILED')"
-
-if [ -d "$HOME/.ciel/sky130A" ]; then
-    echo "6. PDK (sky130A): INSTALLED"
-else
-    echo "6. PDK (sky130A): NOT FOUND"
-fi
-
-if [ -d "$HOME/OpenLane" ]; then
-    echo "7. OpenLANE: INSTALLED"
-else
-    echo "7. OpenLANE: NOT FOUND"  
-fi
-
-echo
-echo "=== Installation Summary ==="
-echo "All tools successfully installed and verified!"
-```
 
 ### Installation Status
 
