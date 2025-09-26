@@ -75,9 +75,10 @@ yosys -V
 yosys -p "help; exit"
 ```
 
-**Expected Output:** Yosys version information and help menu display
+**📸 Implementation Output:** Yosys version information and help menu display
 
-![Screenshot - Replace with your Yosys installation screenshot]()
+<img width="1167" height="871" alt="Screenshot 2025-09-25 171854" src="https://github.com/user-attachments/assets/db6270e3-5685-4ed6-873c-b0cf7153abb8" />
+
 
 ### 2. Iverilog Installation
 
@@ -95,9 +96,10 @@ echo 'module test(input a, b, output c); assign c = a & b; endmodule' > test.v
 iverilog -o test test.v
 ```
 
-**Expected Output:** Icarus Verilog version and successful compilation
+**📸 Implementation Output:** Icarus Verilog version and successful compilation
 
-![Screenshot - Replace with your Iverilog screenshot]()
+<img width="1183" height="975" alt="Screenshot 2025-09-25 173137" src="https://github.com/user-attachments/assets/8fdc8715-4561-404b-86ac-ea872d7c331a" />
+
 
 ### 3. GTKWave Installation
 
@@ -113,7 +115,8 @@ gtkwave --version
 
 **Expected Output:** GTKWave version information
 
-![Screenshot - Replace with your GTKWave screenshot]()
+<img width="1845" height="721" alt="Screenshot 2025-09-25 173309" src="https://github.com/user-attachments/assets/0e61d784-bbba-4af5-9de9-607deb4b773b" />
+
 
 ### 4. NGSpice Installation (Complete Process)
 
@@ -145,9 +148,10 @@ cd ../..
 ngspice --version
 ```
 
-**Expected Output:** NGSpice version and configuration details
+**📸 Implementation Output:** NGSpice version and configuration details
 
-![Screenshot - Replace with your NGSpice compilation screenshot]()
+<img width="1018" height="500" alt="Screenshot 2025-09-25 162837" src="https://github.com/user-attachments/assets/b105e3e6-b556-4c33-95e9-cf30ef554927" />
+
 
 ### 5. Magic Installation
 
@@ -175,7 +179,8 @@ magic -noconsole -dnull <<< "puts [magic::version]; quit -noprompt" 2>/dev/null
 
 **Note:** Magic Tcl interface may need additional configuration for full functionality.
 
-![Screenshot - Replace with your Magic installation screenshot]()
+<img width="1867" height="883" alt="Screenshot 2025-09-25 173833" src="https://github.com/user-attachments/assets/a7bd69f6-3b89-4530-b84f-f1b3b6de8062" />
+
 
 ### 6. Docker Installation
 
@@ -218,7 +223,8 @@ docker run hello-world
 
 **Expected Output:** Docker hello-world message without sudo
 
-![Screenshot - Replace with your Docker installation screenshot]()
+<img width="1319" height="786" alt="Screenshot 2025-09-25 174217" src="https://github.com/user-attachments/assets/11721dcd-9f06-405d-98c6-2be07a5e8599" />
+
 
 ### 7. OpenLANE Installation (Complete Flow)
 
