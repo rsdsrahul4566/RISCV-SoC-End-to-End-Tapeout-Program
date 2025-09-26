@@ -391,24 +391,6 @@ sudo make install
 - **Tool Integration** - How synthesis, P&R, and verification tools work together
 - **PDK Usage** - Process design kit integration for real fabrication process
 
-## Repository Structure
-
-```
-sfal-vsd-week0/
-├── README.md                 # This installation guide
-├── screenshots/              # Installation verification screenshots
-│   ├── yosys-install.png
-│   ├── ngspice-compile.png
-│   ├── docker-test.png
-│   ├── openlane-success.png
-│   └── verification-script.png
-├── scripts/                  # Utility scripts
-│   ├── verify-tools.sh       # Complete verification script
-│   └── install-all.sh        # Automated installation script (optional)
-└── logs/                     # Installation logs
-    ├── ngspice-build.log
-    └── installation-notes.md
-```
 
 ## Next Steps
 
@@ -428,10 +410,9 @@ The installation provides a solid foundation for advanced VLSI design coursework
 
 ---
 
-**Author:** [Your Name]  
+**Author:** Rahul Kumar
 **Course:** SFAL VSD  
 **Week:** 0 - Tools Installation  
-**Date:** [Current Date]  
 **Status:** Complete ✅
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/yourusername/sfal-vsd-week0)
