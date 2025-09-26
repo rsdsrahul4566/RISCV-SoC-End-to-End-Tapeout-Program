@@ -388,6 +388,6 @@ The installation provides a solid foundation for advanced VLSI design coursework
 **Week:** 0 - Tools Installation  
 **Status:** Complete ✅
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/yourusername/sfal-vsd-week0)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/rsdsrahul4566/RISCV-SoC-End-to-End-Tapeout-Program)
 [![OpenLANE](https://img.shields.io/badge/OpenLANE-Verified-green?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==)]()
 [![PDK](https://img.shields.io/badge/Sky130A-PDK%20Ready-blue)]()
