@@ -275,7 +275,6 @@ make test
 - [x] **OpenLANE** - RTL-to-GDSII flow complete
 - [x] **sky130A PDK** - Process design kit installed and verified
 
-![Screenshot - Replace with your verification script output]()
 
 ## OpenLANE Success Proof
 
@@ -298,7 +297,8 @@ This proves:
 - PDK properly installed and configured
 - Final GDSII layout ready for manufacturing
 
-![Screenshot - Replace with your OpenLANE success screenshot]()
+<img width="1919" height="782" alt="Screenshot 2025-09-26 182800" src="https://github.com/user-attachments/assets/3774053b-292a-471d-ac11-695802bd3f55" />
+
 
 ## Troubleshooting
 
