@@ -9,7 +9,7 @@
 
 This repository documents the complete installation and verification of Electronic Design Automation (EDA) tools required for the SFAL VSD Course Week 0. All installations are performed in Windows Subsystem for Linux (WSL) environment, culminating in a successful OpenLANE RTL-to-GDSII implementation flow.
 
-**Reference Repository:** [sukanyasmeher/sfal-vsd](https://github.com/sukanyasmeher/sfal-vsd?tab=readme-ov-file#day-0---tools-installation)
+
 
 ## Tools Installed
 
