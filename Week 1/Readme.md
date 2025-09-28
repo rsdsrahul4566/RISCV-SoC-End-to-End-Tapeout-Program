@@ -1,4 +1,8 @@
-# WEEK 1 Tasks 
+# WEEK 1 Tasks - Using WSL 
+
+
+
+
 
 
 # 🔧 Task 1: Yosys Optimization with `opt_clean -purge`
