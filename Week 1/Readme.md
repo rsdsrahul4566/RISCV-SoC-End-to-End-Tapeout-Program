@@ -320,7 +320,8 @@ echo "Optimized circuit: \\\\wsl\$\\Ubuntu$(pwd)/counter_optimized.svg"
 
 *Terminal output showing statistics comparison*
 
-![Screenshot Placeholder - Yosys Statistics Comparison]()
+<img width="1919" height="1021" alt="Screenshot 2025-09-28 163313" src="https://github.com/user-attachments/assets/d9dd24c5-e928-4ef1-bf35-10f9bb374473" />
+
 
 ## 🛠️ Tools and Technologies Used
 
