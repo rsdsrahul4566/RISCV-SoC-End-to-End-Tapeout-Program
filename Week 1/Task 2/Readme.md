@@ -366,7 +366,7 @@ echo "✅ All waveform viewers launched"
 *Screenshot showing rollover detection and multiple reset scenarios*
 
 ### Edge Case Analysis
-<img width="1885" height="988" alt="Screenshot 2025-09-28 170502" src="https://github.com/user-attachments/assets/8847c3c3-0472-4b52-80af-db1250a271c9" />
+<img width="1884" height="988" alt="image" src="https://github.com/user-attachments/assets/11e883e3-449a-4df0-a73b-201d13700668" />
 
 *Screenshot showing timing-critical reset behavior*
 
