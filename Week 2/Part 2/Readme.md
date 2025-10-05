@@ -90,6 +90,44 @@ pip install pyyaml click sandpiper-saas
 # Verify installation
 sandpiper-saas --version
 ```
+
+
+# Installation error while installing sandpiper-saas for TL verilog Compilation 
+## The recommended, error-free solution is to use a Python virtual environment or pipx for user-level installs.
+
+ ### **Method 1: Use a Python virtual environment (recommended)**
+```bash
+# Install venv if not present
+sudo apt install -y python3-venv
+
+# Create a virtual environment in your project directory
+cd ~/week2_task2
+python3 -m venv venv
+
+# Activate the virtual environment
+source venv/bin/activate
+
+# Now install sandpiper-saas and dependencies inside the venv
+pip install pyyaml click sandpiper-saas
+
+# Verify installation
+sandpiper-saas --version
+```
+
+### **Method 2:Use pipx (alternative, also safe)**
+```bash
+# Install pipx if not present
+sudo apt install -y pipx
+pipx ensurepath
+
+# Install sandpiper-saas in an isolated environment
+pipx install sandpiper-saas
+
+# Verify installation
+~/.local/bin/sandpiper-saas --version
+
+```
+
 # Simulation Workflow
 ## Step 1: Clone VSDBabySoC Repository
 ```bash
