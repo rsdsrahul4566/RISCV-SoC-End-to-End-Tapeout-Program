@@ -117,21 +117,21 @@ The **VSDBabySoC** is a simplified educational SoC designed to demonstrate funda
 ┌─────────────────────────────────────────────────────────────────┐
 │                         VSDBabySoC                              │
 │                                                                 │
-│    ┌────────────┐          ┌─────────────┐                    │
-│    │   AVSDPLL  │          │   RVMYTH    │                    │
-│    │   (Analog  │   CLK    │  (RISC-V    │                    │
-│    │    Block)  ├─────────►│    Core)    │                    │
-│    │            │          │  (Digital)  │                    │
-│    └─────▲──────┘          └──────┬──────┘                    │
-│          │                        │                            │
-│          │ REF                    │ RV_TO_DAC[9:0]            │
-│          │                        │                            │
-│    ┌─────┴──────┐          ┌──────▼──────┐                    │
-│    │  Reference │          │   AVSDDAC   │                    │
-│    │   Clock    │          │  (10-bit    │──OUT──► Analog     │
-│    │   Input    │          │    DAC)     │        Output      │
-│    │            │          │  (Analog)   │                    │
-│    └────────────┘          └─────────────┘                    │
+│    ┌────────────┐          ┌─────────────┐                      │
+│    │   AVSDPLL  │          │   RVMYTH    │                      │
+│    │   (Analog  │   CLK    │  (RISC-V    │                      │
+│    │    Block)  ├─────────►│    Core)    │                      │
+│    │            │          │  (Digital)  │                      │
+│    └─────▲──────┘          └──────┬──────┘                      │
+│          │                        │                             │
+│          │ REF                    │ RV_TO_DAC[9:0]              │
+│          │                        │                             │
+│    ┌─────┴──────┐          ┌──────▼──────┐                      │
+│    │  Reference │          │   AVSDDAC   │                      │
+│    │   Clock    │          │  (10-bit    │──OUT──► Analog       │
+│    │   Input    │          │    DAC)     │        Output        │
+│    │            │          │  (Analog)   │                      │
+│    └────────────┘          └─────────────┘                      │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 
@@ -200,7 +200,7 @@ Legend:
 ┌──────────────────────────────────────────────────────────┐
 │  AVSDPLL (Phase-Locked Loop)                             │
 │  ┌────────────────────────────────────────────────────┐  │
-│  │ Inputs:  REF, ENb_VCO, ENb_CP, VCO_IN             │  │
+│  │ Inputs:  REF, ENb_VCO, ENb_CP, VCO_IN              │  │
 │  │ Output:  CLK (Stable System Clock)                 │  │
 │  │ Function: Generate stable clock from reference     │  │
 │  └────────────────────────────────────────────────────┘  │
@@ -222,7 +222,7 @@ Legend:
 ┌──────────────────────────────────────────────────────────┐
 │  AVSDDAC (Digital-to-Analog Converter)                   │
 │  ┌────────────────────────────────────────────────────┐  │
-│  │ Inputs:  D[9:0], VREFH (reference voltage)        │  │
+│  │ Inputs:  D[9:0], VREFH (reference voltage)         │  │
 │  │ Output:  OUT (analog voltage)                      │  │
 │  │ Function: Convert digital to analog signal         │  │
 │  └────────────────────────────────────────────────────┘  │
@@ -235,9 +235,7 @@ Legend:
                     │   Output     │
                     │  (External)  │
                     └──────────────┘
-```
 
-```
 
 ---
 
