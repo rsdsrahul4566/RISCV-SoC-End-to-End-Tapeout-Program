@@ -263,20 +263,30 @@ Waveform Viewer: GTKWave v3.3.116
 
 ### Deliverables Checklist
 
-- **Installed Icarus Verilog and GTKWave on WSL Ubuntu**
-- **Installed SandPiper-SaaS for TL-Verilog compilation**
-- **Cloned VSDBabySoC repository successfully**
-- **Compiled TL-Verilog source to standard Verilog**
-- **Simulated complete BabySoC design with all modules**
-- **Generated VCD waveform file (pre_synth_sim.vcd)**
-- **Analyzed and documented reset operation**
-- **Analyzed and documented clocking mechanism (PLL)**
-- **Analyzed and documented dataflow between modules (CPU→DAC)**
-- **Captured GTKWave screenshots with explanations**
-- **Completed Part 1 theory write-up on SoC fundamentals**
-- **Created comprehensive documentation**
+- **Installed Icarus Verilog and GTKWave on WSL Ubuntu** ✅
+- **Installed SandPiper-SaaS for TL-Verilog compilation** ✅
+- **Cloned VSDBabySoC repository successfully** ✅
+- **Compiled TL-Verilog source to standard Verilog** ✅
+- **Simulated complete BabySoC design with all modules** ✅
+- **Generated VCD waveform file (pre_synth_sim.vcd)** ✅
+- **Analyzed and documented reset operation** ✅
+- **Analyzed and documented clocking mechanism (PLL)** ✅
+- **Analyzed and documented dataflow between modules (CPU→DAC)** ✅
+- **Captured GTKWave screenshots with explanations** ✅
+- **Completed Part 1 theory write-up on SoC fundamentals** ✅
+- **Created comprehensive documentation** ✅
  
 ---
+
+## **📷 Screenshot 2: Terminal Logs:**
+
+<img width="1919" height="1023" alt="Screenshot 2025-10-05 171538" src="https://github.com/user-attachments/assets/6c32e109-c815-4f00-8a63-5b2ccae3ea21" />
+
+
+<img width="1919" height="1022" alt="Screenshot 2025-10-05 171622" src="https://github.com/user-attachments/assets/75974a27-e9de-4cba-8b00-a5abe8ed6a45" />
+
+
+
 
  ### Learning Outcomes
 Through this Week 2 task, the following competencies were demonstrated:
