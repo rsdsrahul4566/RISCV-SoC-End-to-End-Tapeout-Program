@@ -304,6 +304,45 @@ Simulation Tool: Icarus Verilog v12.0
 Waveform Viewer: GTKWave v3.3.116
 ```
 
+# Troubleshooting Common Issues
+## Issue 1: sandpiper-saas not found
+### Problem: Command not found when trying to run sandpiper-saas
+### **Solution:**
+```bash
+# Make sure virtual environment is activated
+source ~/week2_task2/venv/bin/activate
+
+# Reinstall if needed
+pip install sandpiper-saas
+```
+
+# Issue 2: iverilog compilation errors
+## Problem: Errors during iverilog compilation
+### **Solution:**
+```bash
+# Check that TL-Verilog was compiled first
+ls -l output/compiled_tlv/rvmyth.v
+
+# If file doesn't exist, run sandpiper-saas compilation again
+# Make sure virtual environment is active
+```
+
+# Issue 3: GTKWave doesn't open
+## Problem: GTKWave fails to launch or display is not available
+### **Solution:**
+```bash
+# For WSL users, ensure X server is running (VcXsrv or X410)
+# Set DISPLAY variable
+export DISPLAY=:0
+
+# Try launching again
+gtkwave pre_synth_sim.vcd &
+```
+
+
+
+
+
 ---
 
 ### Deliverables Checklist
