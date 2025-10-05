@@ -132,6 +132,7 @@ gtkwave pre_synth_sim.vcd &
 ## Screenshot 1: Reset Operation
 
 
+<img width="1919" height="1079" alt="Screenshot 2025-10-05 161049" src="https://github.com/user-attachments/assets/87312787-e850-45ca-bf82-59da526700b2" />
 
 
 
