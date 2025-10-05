@@ -1,5 +1,13 @@
 # 📚 Week 2 Part 1: SoC Design Fundamentals - Theory
 
+
+[![SoC](https://img.shields.io/badge/Topic-System%20on%20Chip-blue.svg)]()
+[![RISC-V](https://img.shields.io/badge/Architecture-RISC--V-red.svg)](https://riscv.org/)
+[![Theory](https://img.shields.io/badge/Type-Conceptual%20Study-purple.svg)]()
+[![VSD](https://img.shields.io/badge/Course-SFAL--VSD-green.svg)](https://www.vlsisystemdesign.com/)
+[![Mixed-Signal](https://img.shields.io/badge/Design-Mixed%20Signal-orange.svg)]()
+[![Status](https://img.shields.io/badge/Status-✅%20Complete-success.svg)]()
+
 ## 🎯 Objective
 
 To develop a comprehensive understanding of System-on-Chip (SoC) design fundamentals and understand how VSDBabySoC serves as an educational platform for learning SoC concepts.
@@ -212,7 +220,7 @@ Legend:
 │  RVMYTH (RISC-V Microprocessor)                          │
 │  ┌────────────────────────────────────────────────────┐  │
 │  │ Input:   CLK (from PLL)                            │  │
-│  │ Output:  RV_TO_DAC[9:0] (10-bit data)             │  │
+│  │ Output:  RV_TO_DAC[9:0] (10-bit data)              │  │
 │  │ Function: Execute instructions, generate output    │  │
 │  └────────────────────────────────────────────────────┘  │
 └──────────────────────────┬───────────────────────────────┘
@@ -237,9 +245,10 @@ Legend:
                     └──────────────┘
 
 
----
+
 ```
 
+---
 ## 🎓 Why BabySoC for Learning?
 
 VSDBabySoC serves as an excellent educational platform for several reasons:
@@ -277,8 +286,12 @@ VSDBabySoC serves as an excellent educational platform for several reasons:
 VSDBabySoC covers the entire SoC design process:
 
 ```bash
+
+
 Specification → RTL Design → Functional Simulation → Synthesis →
 Physical Design → Timing Analysis → GDSII Generation
+
+
 ```
 - **Holistic Learning**: Understanding end-to-end flow
 - **Design Methodology**: Industry-standard practices
@@ -380,12 +393,12 @@ Functional modelling is a critical phase in the SoC design flow that occurs **be
 
 ---
 
-## Functional Modelling Workflow
-
-```markdown
 ## ⚙️ Functional Modelling Workflow
 
-```
+```markdown
+
+
+
 ┌────────────────────────────────────────────────────────────┐
 │  1. SPECIFICATION PHASE                                    │
 │     • Define system requirements                           │
@@ -396,8 +409,8 @@ Functional modelling is a critical phase in the SoC design flow that occurs **be
                        ▼
 ┌────────────────────────────────────────────────────────────┐
 │  2. RTL DESIGN PHASE                                       │
-│     • Write Verilog/TL-Verilog code                       │
-│     • Implement modules (CPU, PLL, DAC)                   │
+│     • Write Verilog/TL-Verilog code                        │
+│     • Implement modules (CPU, PLL, DAC)                    │
 │     • Define module interfaces                             │
 └──────────────────────┬─────────────────────────────────────┘
                        │
@@ -412,7 +425,7 @@ Functional modelling is a critical phase in the SoC design flow that occurs **be
                        ▼
 ┌────────────────────────────────────────────────────────────┐
 │  4. COMPILATION                                            │
-│     • TL-Verilog → Verilog (SandPiper-SaaS)               │
+│     • TL-Verilog → Verilog (SandPiper-SaaS)                │
 │     • Compile with iverilog                                │
 │     • Generate simulation executable                       │
 └──────────────────────┬─────────────────────────────────────┘
@@ -421,14 +434,14 @@ Functional modelling is a critical phase in the SoC design flow that occurs **be
 ┌────────────────────────────────────────────────────────────┐
 │  5. FUNCTIONAL SIMULATION                                  │
 │     • Run simulation executable                            │
-│     • Generate VCD waveform file                          │
+│     • Generate VCD waveform file                           │
 │     • Capture signal transitions                           │
 └──────────────────────┬─────────────────────────────────────┘
                        │
                        ▼
 ┌────────────────────────────────────────────────────────────┐
 │  6. WAVEFORM ANALYSIS                                      │
-│     • Open VCD in GTKWave                                 │
+│     • Open VCD in GTKWave                                  │
 │     • Verify signal behavior                               │
 │     • Check timing relationships                           │
 │     • Validate reset, clock, dataflow                      │
@@ -460,7 +473,8 @@ Functional modelling is a critical phase in the SoC design flow that occurs **be
         │   Proceed to     │
         │   Synthesis      │
         └──────────────────┘
-```
+
+
 ```
 
 
@@ -477,7 +491,7 @@ Functional modelling is a critical phase in the SoC design flow that occurs **be
 - **Verification**: SystemVerilog UVM, Formal verification
 - **Code Coverage**: Track tested vs. untested scenarios
 
----
+
 ### Detailed Simulation Flow
 
 ```markdown
@@ -542,6 +556,7 @@ Functional modelling is a critical phase in the SoC design flow that occurs **be
 ```
 
 
+---
 
 ## 🎯 Conclusion
 
@@ -552,6 +567,8 @@ The VSDBabySoC project provides an excellent foundation for understanding System
 - **Design Methodology**: Industry-standard practices and workflows
 - **Verification Techniques**: Importance of functional modelling and simulation
 - **Practical Skills**: Hands-on experience with real design tools
+
+---
 
 ### Key Takeaways:
 
@@ -592,8 +609,7 @@ This theoretical foundation, combined with hands-on simulation practice, prepare
 
 ---
 
-- **Author**: Rahul Kumar
-- **Course**: SFAL-VSD SoC Design Journey  
+- **Author**: Rahul Kumar  
 - **Task**: Week 2 Part 1 - SoC Design Fundamentals (Theory)  
 - **Date**: October 2025
 
