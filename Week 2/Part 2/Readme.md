@@ -1,5 +1,10 @@
 # Week 2: BabySoC Fundamentals & Functional Modelling
 
+[![Yosys](https://img.shields.io/badge/Tool-Yosys-blue.svg)](https://yosyshq.net/yosys/)
+[![Verilog](https://img.shields.io/badge/Language-Verilog-green.svg)](https://en.wikipedia.org/wiki/Verilog)
+[![Optimization](https://img.shields.io/badge/Technique-Logic%20Optimization-orange.svg)]()
+[![Status](https://img.shields.io/badge/Status-✅%20Complete-success.svg)]()
+
 ## Objective
 To build a solid understanding of SoC fundamentals and practice functional modelling of the VSDBabySoC using simulation tools (Icarus Verilog & GTKWave).
 
