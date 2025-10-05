@@ -86,11 +86,12 @@ sandpiper-saas --version
 # Simulation Workflow
 ## Step 1: Clone VSDBabySoC Repository
 ```bash
-# Activate virtual environment
-source ~/week2_task2/venv/bin/activate
+cd ~
+mkdir babysoc-week2
+cd babysoc-week2
 
-# Create output directory
-mkdir -p output/compiled_tlv
+git clone https://github.com/manili/VSDBabySoC.git
+cd VSDBabySoC
 ```
 ## Step 2: Compile TL-Verilog to Verilog
 ```bash
