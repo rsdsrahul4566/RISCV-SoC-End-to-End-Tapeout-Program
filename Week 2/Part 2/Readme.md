@@ -1,8 +1,15 @@
 # Week 2: BabySoC Fundamentals & Functional Modelling
 
-[![Yosys](https://img.shields.io/badge/Tool-Yosys-blue.svg)](https://yosyshq.net/yosys/)
+[![Iverilog](https://img.shields.io/badge/Tool-Icarus%20Verilog-green.svg)](http://iverilog.icarus.com/)
+
+[![GTKWave](https://img.shields.io/badge/Viewer-GTKWave-blue.svg)](http://gtkwave.sourceforge.net/)
+
+[![Simulation](https://img.shields.io/badge/Type-Digital%20Simulation-orange.svg)]()
+
 [![Verilog](https://img.shields.io/badge/Language-Verilog-green.svg)](https://en.wikipedia.org/wiki/Verilog)
+
 [![Optimization](https://img.shields.io/badge/Technique-Logic%20Optimization-orange.svg)]()
+
 [![Status](https://img.shields.io/badge/Status-✅%20Complete-success.svg)]()
 
 ## Objective
