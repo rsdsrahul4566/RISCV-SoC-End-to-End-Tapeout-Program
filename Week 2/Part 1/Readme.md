@@ -13,6 +13,7 @@ To develop a comprehensive understanding of System-on-Chip (SoC) design fundamen
 - [VSDBabySoC Architecture](#vsdbabysoc-architecture)
 - [Why BabySoC for Learning](#why-babysoc-for-learning)
 - [Role of Functional Modelling](#role-of-functional-modelling)
+- [Detailed Simulation Flow](#Detailed-Simulation-Flow)
 - [Conclusion](#conclusion)
 - [References](#references)
 
@@ -112,7 +113,7 @@ The **VSDBabySoC** is a simplified educational SoC designed to demonstrate funda
 
 ### Architecture Overview Diagram
 
-``` bash
+
 ┌─────────────────────────────────────────────────────────────────┐
 │                         VSDBabySoC                              │
 │                                                                 │
@@ -184,7 +185,7 @@ Legend:
 
 ---
 
-```bash
+```markdown
 ### Component Interconnection Details
 
 ```
@@ -382,7 +383,7 @@ Functional modelling is a critical phase in the SoC design flow that occurs **be
 
 ## Functional Modelling Workflow
 
-```bash
+```markdown
 ## ⚙️ Functional Modelling Workflow
 
 ```
@@ -480,7 +481,7 @@ Functional modelling is a critical phase in the SoC design flow that occurs **be
 ---
 ### Detailed Simulation Flow
 
-```
+```markdown
 ┌─────────────────────────────────────────────────────────┐
 │  INPUT: RTL Design Files                                │
 │  • rvmyth.tlv (TL-Verilog)                             │
