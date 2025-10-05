@@ -129,7 +129,10 @@ gtkwave pre_synth_sim.vcd &
 ```
 
 # Simulation Results and Analysis
-## Screenshot 1: Reset Operation
+
+---
+
+## 📷 Screenshot 1: Reset Operation
 
 
 <img width="1919" height="1079" alt="Screenshot 2025-10-05 161049" src="https://github.com/user-attachments/assets/87312787-e850-45ca-bf82-59da526700b2" />
@@ -141,16 +144,17 @@ gtkwave pre_synth_sim.vcd &
 This waveform demonstrates the reset operation of the VSDBabySoC system. The reset signal (visible at reset=0) controls the initialization of all system modules.
 Key Observations:
 
-**The reset signal starts at 0, holding all modules in their initial state**
-**During reset, all registers and sequential elements are initialized to known values**
-**When reset is deasserted, the system transitions to normal operation**
-**The PLL begins generating the stable clock signal**
-**The RISC-V core starts fetching and executing instructions from memory**
+- **The reset signal starts at 0, holding all modules in their initial state**
+- **During reset, all registers and sequential elements are initialized to known values**
+- **When reset is deasserted, the system transitions to normal operation**
+- **The PLL begins generating the stable clock signal**
+- **The RISC-V core starts fetching and executing instructions from memory**
 
 The reset operation ensures deterministic startup behavior and proper system initialization before normal operation begins.
 
+---
 
-## Screenshot 2: Clocking and PLL Operation
+## 📷 Screenshot 2: Clocking and PLL Operation
 
 <img width="1919" height="1079" alt="Screenshot 2025-10-05 162346" src="https://github.com/user-attachments/assets/50d800e2-970a-4860-9c90-c9532cf4a921" />
 
@@ -158,15 +162,18 @@ The reset operation ensures deterministic startup behavior and proper system ini
 This waveform shows the PLL (Phase-Locked Loop) generating a stable system clock from the reference input.
 Key Observations:
 
-**CLK**: The system clock output from the PLL, shown as a regular square wave
-**REF**: The reference clock input signal to the PLL
-**VCO_IN**: Voltage-controlled oscillator input
-**ENb_CP, ENb_VCO**: Active-low enable signals for charge pump and VCO (=1 disabled, =0 enabled)
-**lastedge**: Internal PLL signal tracking the last edge detection
-**period**: The calculated period of the PLL output (approximately 35.41625 time units)
-**refpd**: Reference phase detector signal
+- **CLK**: The system clock output from the PLL, shown as a regular square wave
+- **REF**: The reference clock input signal to the PLL
+- **VCO_IN**: Voltage-controlled oscillator input
+- **ENb_CP, ENb_VCO**: Active-low enable signals for charge pump and VCO (=1 disabled, =0 enabled)
+- **lastedge**: Internal PLL signal tracking the last edge detection
+- **period**: The calculated period of the PLL output (approximately 35.41625 time units)
+- **refpd**: Reference phase detector signal
 
 The waveforms demonstrate that the PLL successfully locks to the reference frequency and maintains a stable output clock throughout the simulation. The period remains consistent, showing proper phase-locking behavior.
+
+
+---
 
 ### Screenshot 3: Dataflow Between Modules (CPU to DAC)
 
@@ -198,10 +205,10 @@ The green trace shows the DAC's analog output responding to each digital input:
 **Dataflow Analysis:**
 
 This screenshot clearly demonstrates:
-1. **Digital-to-Analog Conversion**: The DAC successfully converts discrete digital values (D[9:0]) into continuous analog voltage levels (OUT)
-2. **Inter-Module Communication**: Data flows seamlessly from the RISC-V core through the Dext bus to the DAC input
-3. **Real-time Operation**: The waveform shows continuous data updates throughout the simulation timeline (0 to 84999 ns)
-4. **Correct Functionality**: The analog output voltage increases proportionally with the digital input value, confirming proper DAC operation
+- 1. **Digital-to-Analog Conversion**: The DAC successfully converts discrete digital values (D[9:0]) into continuous analog voltage levels (OUT)
+- 2. **Inter-Module Communication**: Data flows seamlessly from the RISC-V core through the Dext bus to the DAC input
+- 3. **Real-time Operation**: The waveform shows continuous data updates throughout the simulation timeline (0 to 84999 ns)
+- 4. **Correct Functionality**: The analog output voltage increases proportionally with the digital input value, confirming proper DAC operation
 
 **Technical Insight:**
 
@@ -212,13 +219,11 @@ The relationship between digital input and analog output follows the DAC transfe
 
 This validates that the VSDBabySoC's mixed-signal integration is functioning correctly, with the digital RISC-V core successfully communicating with the analog DAC module.
 
+--- 
 
-## Screenshot 4: Dataflow Between Modules (CPU to DAC)
+## 📷 Screenshot 4: Dataflow Between Modules (CPU to DAC)
 
 <img width="1919" height="1079" alt="Screenshot 2025-10-05 162917" src="https://github.com/user-attachments/assets/4174f3b5-23be-4d96-983a-dea898ec1214" />
-
-
-
 
 ### **Description:**
 This waveform captures the critical dataflow from the RISC-V core to the DAC, demonstrating inter-module communication.
@@ -226,21 +231,21 @@ Key Observations:
 
 **D[9:0]** / **Dext[10:0]**: 10-bit digital data bus carrying values from the RISC-V core to the DAC
 
-**Values transition**: 011 → 000 → 001 → 003 → 005 → 00A → 00F → 015 → 01C → 024... (hexadecimal)
-These values represent computational results from the CPU being sent to the DAC
+- **Values transition**: 011 → 000 → 001 → 003 → 005 → 00A → 00F → 015 → 01C → 024... (hexadecimal)
+- These values represent computational results from the CPU being sent to the DAC
 
 
 **OUT**: DAC analog output voltage
 
-Responds to digital input changes with corresponding analog voltage levels
-**Values**: 0.0166V, 0.0009V, 0.0277V, 0.0351V, etc.
-The DAC successfully converts digital values to proportional analog voltages
+- Responds to digital input changes with corresponding analog voltage levels
+- **Values**: 0.0166V, 0.0009V, 0.0277V, 0.0351V, etc.
+- The DAC successfully converts digital values to proportional analog voltages
 
 
 **w_CPU_dmem_rd_data_a4[31:0]**: Shows CPU memory read operations, demonstrating active instruction execution
 
-**Dataflow Path**: RISC-V Core → Dext[10:0] bus → DAC Input → Analog OUT
-This demonstrates the complete integration of digital and analog domains in the VSDBabySoC, with the CPU generating computational results that are successfully converted to analog signals by the DAC.
+- **Dataflow Path**: RISC-V Core → Dext[10:0] bus → DAC Input → Analog OUT
+- This demonstrates the complete integration of digital and analog domains in the VSDBabySoC, with the CPU generating computational results that are successfully converted to analog signals by the DAC.
 
 
 ## Simulation Logs Summary
@@ -257,18 +262,18 @@ Waveform Viewer: GTKWave v3.3.116
 
 ### Deliverables Checklist
 
- **Installed Icarus Verilog and GTKWave on WSL Ubuntu**
- **Installed SandPiper-SaaS for TL-Verilog compilation**
- **Cloned VSDBabySoC repository successfully**
- **Compiled TL-Verilog source to standard Verilog**
- **Simulated complete BabySoC design with all modules**
- **Generated VCD waveform file (pre_synth_sim.vcd)**
- **Analyzed and documented reset operation**
- **Analyzed and documented clocking mechanism (PLL)**
- **Analyzed and documented dataflow between modules (CPU→DAC)**
- **Captured GTKWave screenshots with explanations**
- **Completed Part 1 theory write-up on SoC fundamentals**
- **Created comprehensive documentation**
+- **Installed Icarus Verilog and GTKWave on WSL Ubuntu**
+- **Installed SandPiper-SaaS for TL-Verilog compilation**
+- **Cloned VSDBabySoC repository successfully**
+- **Compiled TL-Verilog source to standard Verilog**
+- **Simulated complete BabySoC design with all modules**
+- **Generated VCD waveform file (pre_synth_sim.vcd)**
+- **Analyzed and documented reset operation**
+- **Analyzed and documented clocking mechanism (PLL)**
+- **Analyzed and documented dataflow between modules (CPU→DAC)**
+- **Captured GTKWave screenshots with explanations**
+- **Completed Part 1 theory write-up on SoC fundamentals**
+- **Created comprehensive documentation**
  
 ---
 
@@ -287,8 +292,8 @@ Through this Week 2 task, the following competencies were demonstrated:
 
 --- 
 
--Author: **Rahul Kumar**
--Date: **October 2025**
--Task: Week 2 - **BabySoC Fundamentals & Functional Modelling**
+- Author: **Rahul Kumar**
+- Date: **October 2025**
+- Task: Week 2 - **BabySoC Fundamentals & Functional Modelling**
 
  **WEEK 2 Task 2 Status: ✅ Complete and Verified**
