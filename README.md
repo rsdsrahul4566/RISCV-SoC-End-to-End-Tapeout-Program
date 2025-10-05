@@ -56,6 +56,8 @@ Create a scalable and replicable reference tapeout program that serves as a nati
 - 🤝 **Collaboration**: Working with foundries and industry partners
 - 📚 **Documentation**: Creating production-ready design documentation
 
+---
+
 ## 🏗️ Program Structure
 
 ### Phase 1: Foundation (Weeks 1-4)
@@ -83,6 +85,8 @@ Create a scalable and replicable reference tapeout program that serves as a nati
 - Final GDSII Generation and Tapeout
 - Post-Silicon Validation Planning
 
+---
+
 ## 🛠️ Tools & Technologies
 
 ### EDA Tools
@@ -98,6 +102,8 @@ Create a scalable and replicable reference tapeout program that serves as a nati
 - **Languages**: Verilog, SystemVerilog, TCL
 - **Methodologies**: UVM, OVM, Industry-standard flows
 
+---
+
 ## 📚 Prerequisites
 
 ### Academic Background
@@ -108,6 +114,8 @@ Create a scalable and replicable reference tapeout program that serves as a nati
 - **Recommended**: Prior exposure to Verilog/VHDL
 - **Helpful**: Linux/Unix command line experience
 - **Beneficial**: Understanding of RISC-V ISA basics
+
+---
 
 ## 🚀 Getting Started
 
@@ -126,10 +134,8 @@ Create a scalable and replicable reference tapeout program that serves as a nati
 > **- Previous Program Graduate**
 
 ## 📞 Contact & Support
+- **Email**: rsdsrahul45665@gmail.com
 
-### Program Coordination
-- **Email**: riscv-tapeout@iitgn.ac.in
-- **Address**: IIT Gandhinagar, Palaj, Gandhinagar, Gujarat
 
 
 ## 📈 Impact & Recognition
