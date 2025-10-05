@@ -253,6 +253,8 @@ Simulation Tool: Icarus Verilog v12.0
 Waveform Viewer: GTKWave v3.3.116
 ```
 
+---
+
 ### Deliverables Checklist
 
  **Installed Icarus Verilog and GTKWave on WSL Ubuntu**
@@ -267,6 +269,8 @@ Waveform Viewer: GTKWave v3.3.116
  **Captured GTKWave screenshots with explanations**
  **Completed Part 1 theory write-up on SoC fundamentals**
  **Created comprehensive documentation**
+ 
+---
 
  ### Learning Outcomes
 Through this Week 2 task, the following competencies were demonstrated:
@@ -281,7 +285,10 @@ Through this Week 2 task, the following competencies were demonstrated:
 **Verification Methodology**: Knowledge of functional verification as a critical pre-synthesis step
 
 
+--- 
 
-Author: **Rahul Kumar**
-Date: **October 2025**
-Task: Week 2 - **BabySoC Fundamentals & Functional Modelling**
+-Author: **Rahul Kumar**
+-Date: **October 2025**
+-Task: Week 2 - **BabySoC Fundamentals & Functional Modelling**
+
+ **WEEK 2 Task 2 Status: ✅ Complete and Verified**
