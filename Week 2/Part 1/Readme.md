@@ -185,10 +185,10 @@ Legend:
 
 ---
 
+### **Component Interconnection Details:**
 ```markdown
-### Component Interconnection Details
 
-```
+
 ┌──────────────┐
 │   External   │
 │  Reference   │
@@ -238,6 +238,7 @@ Legend:
 
 
 ---
+```
 
 ## 🎓 Why BabySoC for Learning?
 
