@@ -73,13 +73,81 @@ iverilog -g2012 -DPRE_SYNTH_SIM -o output/pre_synth_sim/pre_synth_sim.out -I./sr
 
 ### 4. Run Post-Synthesis Gate-Level Simulation  
 
-Synthesize with Yosys (use your existing Makefile or command), then run GLS:
+Synthesize with Yosys (use our existing Makefile or command), then run GLS:
+
+*Step 1: Navigate to the Week 2 Directory*
 
 ```bash
-make synth # or your synthesis command
-make post_synth_sim # or manually, see instructions
+rsdsrahul@Rahulkumar:~$ cd ~/babysoc-week2/VSDBabySoC
+```
+*Step 2: Clone the repo:
+```bash
+git clone https://github.com/manili/VSDBabySoC.git
 ```
 
+*Step 3: executes a Yosys synthesis script that performs:​
+- Reads the RTL Verilog files (vsdbabysoc.v, rvmyth.v, clk_gate.v)
+- Reads the Sky130 standard cell library
+- Synthesizes the design targeting the Sky130 process
+- Generates the gate-level netlist
+```bash
+# Run synthesis
+make synth
+```
+
+
+📷 Screenshots :
+
+<img width="1916" height="1021" alt="Screenshot 2025-10-12 193531" src="https://github.com/user-attachments/assets/7e0b3a70-ecf0-45a0-b84b-802e1345abe7" />
+
+<img width="1919" height="1018" alt="Screenshot 2025-10-12 193607" src="https://github.com/user-attachments/assets/83e1304d-6f6b-4ab3-8c5d-8448980cde17" />
+
+<img width="1919" height="1022" alt="Screenshot 2025-10-12 193702" src="https://github.com/user-attachments/assets/1d8274d4-c21c-46b6-89ab-8ae40759d0c5" />
+
+<img width="1919" height="1021" alt="Screenshot 2025-10-12 193730" src="https://github.com/user-attachments/assets/3c625712-35d7-4f1a-9e59-fb22526318bd" />
+
+<img width="1918" height="1021" alt="Screenshot 2025-10-12 193752" src="https://github.com/user-attachments/assets/e7d9ee1e-05c8-47a4-be86-e6bd003cd895" />
+
+
+*Step 4: Download Sky130 Primitives & Verify primitives exist:
+
+```bash
+git clone --depth=1 https://github.com/google/skywater-pdk-libs-sky130_fd_sc_hd.git
+```
+
+```bash
+ls -la src/gls_model/
+```
+
+```bash
+Expected files:
+- `primitives.v`
+- `sky130_fd_sc_hd.v`
+```
+*If your working directory doesn't have these files, copy them:*
+
+```bash
+cp ~/babysoc-week2/VSDBabySoC_complete/src/gls_model/* ~/babysoc-week2/VSDBabySoC/src/gls_model/
+```
+*Step 5: Compile with iverilog and run the simulation using GTK Viewer:*
+```bash
+iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 \
+  -o ./output/post_synth_sim.out \
+  ./src/gls_model/primitives.v \
+  ./src/gls_model/sky130_fd_sc_hd.v \
+  ./output/synth/vsdbabysoc.synth.v \
+  ./src/module/avsdpll.v \
+  ./src/module/avsddac.v \
+  ./src/module/testbench.v
+
+# Run simulation
+cd output
+./post_synth_sim.out
+
+# View waveforms
+gtkwave dump.vcd &
+
+```
 
 ---
 
