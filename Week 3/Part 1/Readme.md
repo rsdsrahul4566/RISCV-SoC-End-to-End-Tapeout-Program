@@ -106,15 +106,17 @@ make post_synth_sim # or manually, see instructions
 
 ## 🖼️ Add Your Screenshots Below
 
-### Pre-Synthesis Functional Simulation Waveform
+### 📷 Pre-Synthesis Functional Simulation Waveform
 
-![Pre-Synthesis Waveform](place-your-pre-synthesis-waveform.png)
+<img width="1916" height="1079" alt="Screenshot 2025-10-12 190607" src="https://github.com/user-attachments/assets/a669d999-96d3-45a2-9cd5-61eb912c9420" />
+
 
 ---
 
-### Post-Synthesis GLS Waveform
+### 📷 Post-Synthesis GLS Waveform
 
-![Post-Synthesis GLS Waveform](place-your-post-synthesis-waveform.png)
+<img width="1919" height="1079" alt="Screenshot 2025-10-12 184021" src="https://github.com/user-attachments/assets/9cce33d4-df15-4cfb-bcd9-fbd97da939cf" />
+
 
 ---
 
@@ -134,11 +136,7 @@ make post_synth_sim # or manually, see instructions
 
 ---
 
-## License
 
-This project is for educational purposes following VSD course licensing.
-
----
 
 ## 🔗 Useful Links
 
